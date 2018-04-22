@@ -13,13 +13,13 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const routing_controllers_1 = require("routing-controllers");
-const data_1 = require("./data");
+const entity_1 = require("./entity");
 let GameController = class GameController {
     getPage(id) {
-        return data_1.default[id];
+        return gamesById[id];
     }
     allPages() {
-        return data_1.default;
+        return gamesById;
     }
 };
 __decorate([
@@ -27,7 +27,7 @@ __decorate([
     __param(0, routing_controllers_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number]),
-    __metadata("design:returntype", Object)
+    __metadata("design:returntype", entity_1.default)
 ], GameController.prototype, "getPage", null);
 __decorate([
     routing_controllers_1.Get('/games'),
