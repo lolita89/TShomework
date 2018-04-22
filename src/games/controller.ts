@@ -1,6 +1,7 @@
 // src/pages/controller.ts
 import { JsonController, Get, Param } from 'routing-controllers'
-import gamesById, { Game } from './data'
+//import gamesById, { Game } from './data'
+import Game from './entity'
 
 type GameList = { Games: Game[] }
 

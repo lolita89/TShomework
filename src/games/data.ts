@@ -1,7 +1,7 @@
 export interface Game {
   id: number,
-  name: Text,
-  color: Text,
+  name: string,
+  color: string,
   board: JSON
 }
 
