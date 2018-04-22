@@ -5,7 +5,7 @@ const defaultBoard = [
     ['O', 'O', 'O'],
     ['O', 'O', 'O'],
 ];
-const pagesById = {
+const gamesById = {
     1: {
         id: 1,
         name: 'game1',
@@ -20,10 +20,10 @@ const pagesById = {
     },
     3: {
         id: 1,
-        name: 'game2',
+        name: 'game3',
         color: 'yellow',
         board: defaultBoard
     }
 };
-exports.default = pagesById;
+exports.default = gamesById;
 //# sourceMappingURL=data.js.map

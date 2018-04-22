@@ -1,11 +1,11 @@
 // src/index.ts
 import 'reflect-metadata'
 import {createKoaServer} from 'routing-controllers'
-import PageController from './pages/controller'
+import GameController from './games/controller'
 
 const app = createKoaServer({
   controllers: [
-    PageController
+    GameController
   ]
 })
 

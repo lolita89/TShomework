@@ -14,7 +14,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const routing_controllers_1 = require("routing-controllers");
 const data_1 = require("./data");
-let PageController = class PageController {
+let GameController = class GameController {
     getPage(id) {
         return data_1.default[id];
     }
@@ -23,21 +23,20 @@ let PageController = class PageController {
     }
 };
 __decorate([
-    routing_controllers_1.Get('/pages/:id'),
+    routing_controllers_1.Get('/games/:id'),
     __param(0, routing_controllers_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number]),
-    __metadata("design:returntype", typeof (_a = typeof data_1.Page !== "undefined" && data_1.Page) === "function" && _a || Object)
-], PageController.prototype, "getPage", null);
+    __metadata("design:returntype", Object)
+], GameController.prototype, "getPage", null);
 __decorate([
-    routing_controllers_1.Get('/pages'),
+    routing_controllers_1.Get('/games'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Object)
-], PageController.prototype, "allPages", null);
-PageController = __decorate([
+], GameController.prototype, "allPages", null);
+GameController = __decorate([
     routing_controllers_1.JsonController()
-], PageController);
-exports.default = PageController;
-var _a;
+], GameController);
+exports.default = GameController;
 //# sourceMappingURL=controller.js.map
